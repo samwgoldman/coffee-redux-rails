@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "coffee-rails"
 
   s.add_runtime_dependency 'coffee-script', '>= 2.2.0'
-  s.add_runtime_dependency 'railties',      '~> 3.1.0.rc1'
+  s.add_runtime_dependency 'railties',      '~> 3.1.0'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
