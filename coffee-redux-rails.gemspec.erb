@@ -1,0 +1,21 @@
+$:.push File.expand_path("../lib", __FILE__)
+require "coffee/rails/version"
+
+Gem::Specification.new do |s|
+  s.name        = "coffee-redux-rails"
+  s.version     = Coffee::Rails::VERSION
+  s.platform    = Gem::Platform::RUBY
+  s.authors     = ["Santiago Pastorino", "Sam Goldman"]
+  s.email       = ["sam@smartlogicsolutions.com"]
+  s.homepage    = "https://github.com/samwgoldman/coffee-redux-rails"
+  s.summary     = %q{CoffeeScriptRedux adapter for the Rails asset pipeline.}
+  s.description = %q{CoffeeScriptRedux adapter for the Rails asset pipeline.}
+
+  s.add_runtime_dependency 'coffee-script-redux', '>= 0.0.1'
+  s.add_runtime_dependency 'railties',            '>= 4.0.0.beta', '< 5.0'
+
+  s.files         = [<%= files.map(&:inspect).join ',' %>]
+  s.test_files    = [<%= test_files.map(&:inspect).join ',' %>]
+  s.executables   = [<%= executables.map(&:inspect).join ',' %>]
+  s.require_paths = ["lib"]
+end
